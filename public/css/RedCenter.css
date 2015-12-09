@@ -167,12 +167,9 @@ body {
   border-top: 1px solid #ccc;
   line-height: 1.5rem;
 }
-#tille-integral-list > img {
-  float: left;
-  padding-left: 0.5rem;
-  margin-right: 0.5rem;
-}
 #tille-integral-list > span {
+  margin-left: 0.54688rem;
+  color: #b8b8b8;
   font-size: 0.40625rem;
 }
 #integral-list {
