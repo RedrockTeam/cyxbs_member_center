@@ -4,65 +4,107 @@
 	<meta charset="UTF-8">
 	<title>RedCenter</title>
 	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/RedCenter-explain.css">
-	<script src="js/flexible.js"></script>
+	<link rel="stylesheet" href="css/RedCenter.css">
 </head>
-<body>
-	<div id="container-explain" class="page-width auto-center">	
-		<h1>会员中心“积分新计划”规则</h1>
-		<h2>什么是月积分新计划？</h2>
-		<p>
-			答：会员中心“月积分新计划”是红岩网校会员中心月积分新计划”是红岩网校会员中心“月积分新计划”是红岩网校会员中心“月积分新计划”是红岩网校会员中心“月积分新计划”是红岩网校会员中心“月积分新计划”是红岩网校
-		</p>
-		<h2>如何参加月积分新计划？</h2>
-		<p>
-			答：会员中心“月积分新计划”是红岩网校会员中心月
-			积分新计划”是红岩网校会员中心“月积分新计划”是
-			红岩网校会员中心
-		</p>
-		<h2>月名次礼品兑换一览表</h2>
-		<table id="prize" class="full-width">
-			<tr>
-				<td class="col-1">排行榜名次</td>
-				<td class="col-2">奖品名称</td>
-				<td class="col-3">数量</td>
-			</tr>
-
-			<tr>
-				<td class="col-1">第一名</td>
-				<td class="col-2">键盘鼠标</td>
-				<td class="col-3">每名一份</td>
-			</tr>
-
-			<tr>
-				<td class="col-1">第二/三名</td>
-				<td class="col-2">键盘鼠标</td>
-				<td class="col-3">每名一份</td>
-			</tr>
-
-			<tr>
-				<td class="col-1">第二/三名</td>
-				<td class="col-2">键盘鼠标</td>
-				<td class="col-3">每名一份</td>
-			</tr>
-
-			<tr>
-				<td class="col-1">第二/三名</td>
-				<td class="col-2">键盘鼠标</td>
-				<td class="col-3">每名一份</td>
-			</tr>
-
-
-		</table>
-		<h2>如何领取月积分新的奖品？</h2>
-		<p>
-			答：会员中心“月积分新计划”是红岩网校会员中心月积分新计划”是红岩网校会员中心“月积分新计划”是红岩网校会员中心中心“月积分新计划”是红岩网校会员中心月积分新计划”是红岩网校会员中心“月积分新计划”是红岩网校会员中心
-		</p>
+<body> 
+	<div id="info-wrap" class="full-width">
+		<div id="info" class="auto-center">
+			<div id="head" class="float-left">
+				<img src="img/head.png" alt="head-image">
+			</div>
+			<div id="stu-info" class="float-left">
+				<h2 id="stu-name">刘金莉<span class="bolder">VIP 1</span></h2>
+				<p id="stu-id" class="color-c9  bolder">2014210000</p>
+			</div>
+		</div>
 	</div>
-	<footer>
-		<p>最终解释权归重庆邮电大学红岩网校工作站所属</p>
-		<p>红岩网校工作站运营维护部</p>
-		<p>2015.12</p>
-	</footer>
+	<div id="score-wrap">
+		<ul class="full-width auto-center">
+			<li id="month-score" class="border-btm-1">
+				<p class="score float-left">
+					<span>当月积分:</span>
+					<span class="value-score float-right">1250分</span>
+				</p>
+				<p class="score float-right">
+					<span class="rank-score">当月排名:</span>
+					<span class="float-right">
+						50名
+						<img src="./img/rose.png" alt="上升">
+					</span>
+				</p>
+			</li>
+			<li id="year-score"  class="clear">
+				<p class="score float-left">
+					<span>年度积分:</span>
+					<span class="value-score float-right">1250分</span>
+				</p>
+				<p class="score float-right">
+					<span class="rank-score">年度排名:</span>
+					<span class=" float-right">
+						10名
+						<img src="./img/decline.png" alt="下降">
+					</span>
+				</p>
+			</li>
+		</ul>
+	</div>
+	<div id="exchange-btn-wrap" class="full-width">
+		<a href="##" id="exchange-btn" class="page-width auto-center">积分兑换规则详情</a>
+	</div>
+
+	<div id="select-product-wrap" class="full-width">
+		<ul>
+			<li class="product-list">
+				<img src="img/wechat.png" class="float-left product-icon" alt="BTdown">
+				<p class="border-btm-1 product-name">	
+					重邮小帮手微信端
+					<span class="float-right">100分</span>
+				</p>
+			</li>
+			<li class="product-list">
+				<img src="img/shihuo.png" class="float-left product-icon" alt="BTdown">
+				<p class="border-btm-1 product-name">	
+					BTdown
+					<span class="float-right">100分</span>
+				</p>
+			</li>
+			<li class="product-list">
+				<img src="img/shihuo.png" class="float-left product-icon" alt="BTdown">
+				<p class="product-name">	
+					拾货
+					<span class="float-right">100分</span>
+				</p>
+			</li>
+		</ul>		
+	</div>
+	<div id="integral-list-wrap">
+		<div id="tille-integral-list" class="full-width border-btm-1">
+			<img class="product-icon" src="img/integral-icon.png" alt="integral-icon">
+			<span>积分排行榜</span>
+		</div>
+		<ul id="integral-list">
+			<li class="border-btm-1">
+				<span class="first">1</span>
+				<p>没哦机会北京</p>
+			</li>
+			<li class="border-btm-1">
+				<span class="second">2</span>
+				<p>没哦机会北京</p>
+			</li>
+			<li class="border-btm-1">
+				<span class="third">3</span>
+				<p>没哦机会北京</p>
+			</li>
+			<li class="border-btm-1">
+				<span>4</span>
+				<p>没哦机会北京</p>
+			</li>
+			<li class="border-btm-1">
+				<span>5</span>
+				<p>没哦机会北京</p>
+			</li>
+		</ul>
+	</div>
+<script src="js/flexible.js"></script>
 </body>
 </html>

@@ -1,7 +1,9 @@
 body {
-  max-width: 10rem;
+  margin: 0 auto;
   width: 100%;
-  font-family: "Microsoft YaHei";
+  max-width: 10rem;
+  overflow: hidden;
+  font-family: Arial, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 }
 .auto-center {
   margin: 0 auto;
@@ -60,34 +62,31 @@ body {
   line-height: 0.40625rem;
 }
 #stu-id {
-  line-height: 0.85938rem;
+  line-height: 0.375rem;
 }
 #stu-name {
+  margin-top: 0.375rem;
+  margin-bottom: 0.4375rem;
+  height: 0.5rem;
   font-weight: 500;
-  font-size: 0.54688rem;
+  font-size: 0.5rem;
   /*px*/
+  line-height: 0.5rem;
+  vertical-align: middle;
 }
-#level-symbol {
+#stu-name > span {
+  position: relative;
+  top: -0.10938rem;
   display: inline-block;
-  margin-left: 0.15625rem;
+  margin-left: 0.46875rem;
+  border-radius: 0.125rem;
   /*px*/
-  padding: 0.07813rem 0.15625rem;
-  border-radius: 0.07813rem;
-  /*px*/
+  padding: 0.15625rem 0.15625rem;
   color: #fff;
+  line-height: 0.3125rem;
+  font-size: 0.3125rem;
+  font-style: italic;
   background-color: #ff746d;
-}
-#modify-info {
-  border: 1px solid #ccc;
-  /*px*/
-  border-radius: 0.09375rem;
-  /*px*/
-  text-align: center;
-}
-#modify-info > a {
-  padding: 0 0.15625rem;
-  line-height: 0.84375rem;
-  font-size: 0.375rem;
 }
 #month-score,
 #year-score {
@@ -107,6 +106,13 @@ body {
 }
 .score span + span {
   margin-top: 0.39063rem;
+}
+.score span + span > img {
+  position: relative;
+  top: 0.03125rem;
+  margin-left: 0.25rem;
+  width: 0.34375rem;
+  height: 0.34375rem;
 }
 .rank-score {
   padding-left: 0.625rem;
@@ -157,13 +163,14 @@ body {
   /* px */
 }
 #tille-integral-list {
-  padding-left: 0.5rem;
   height: 1.5rem;
   border-top: 1px solid #ccc;
   line-height: 1.5rem;
 }
 #tille-integral-list > img {
   float: left;
+  padding-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 #tille-integral-list > span {
   font-size: 0.40625rem;
@@ -180,8 +187,22 @@ body {
   display: inline-block;
   float: left;
   margin-top: 0.28125rem;
+  margin-right: 0.5rem;
   width: 0.9375rem;
   height: 0.9375rem;
   line-height: 0.9375rem;
   text-align: center;
+}
+#integral-list > li > p {
+  font-size: 0.375rem;
+  /*px*/
+}
+.first {
+  color: #ff7673;
+}
+.second {
+  color: #ff7a14;
+}
+.third {
+  color: #35a2e0;
 }

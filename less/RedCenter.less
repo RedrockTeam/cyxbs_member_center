@@ -1,7 +1,10 @@
 body {
-	max-width: 640px;
+	margin: 0 auto;
 	width: 100%;
-	font-family: "Microsoft YaHei";
+	max-width: 10rem;
+	overflow: hidden;
+	font-family: Arial, "Hiragino Sans GB", "Microsoft YaHei",  
+             "WenQuanYi Micro Hei", sans-serif;;
 }
 .auto-center {
 	margin: 0 auto;
@@ -52,39 +55,37 @@ body {
 		height: 126px;
 	}
 }
-#stu-name,
-#stu-id {
-}
 #stu-id,
 #current-level {
 	font-size: 26px;
 	line-height: 26px;	
 }
 #stu-id {
-	line-height: 55px;
+	line-height: 24px;
 }
 #stu-name {
+	margin-top: 24px;
+	margin-bottom: 28px;
+	height: 32px;
 	font-weight: 500;
-	font-size: 35px; /*px*/
-}
-#level-symbol {
-	display: inline-block;
-	margin-left: 10px; /*px*/
-	padding: 5px 10px;
-	border-radius: 5px;  /*px*/
-	color: #fff;
-	background-color: #ff746d;
-}
-#modify-info {
-	border: 1px solid #ccc;  /*px*/
-	border-radius: 6px;   /*px*/
-	text-align: center;
-	> a {
-		padding: 0 10px;
-		line-height: 54px;
-		font-size: 24px;
+	font-size: 32px; /*px*/
+	line-height: 32px;
+	vertical-align: middle;
+	> span {
+		position: relative;
+		top: -7px;
+		display: inline-block;
+		margin-left: 30px;
+		border-radius: 8px;/*px*/
+		padding: 10px 10px;
+		color: #fff;
+		line-height: 20px;
+		font-size: 20px;
+		font-style: italic;
+		background-color: #ff746d;
 	}
 }
+
 #month-score,
 #year-score {
 	padding: 0 32px;
@@ -102,7 +103,15 @@ body {
 	}
 	span + span {
 		margin-top: 25px;
+		> img {
+			position: relative;
+			top: 2px;
+			margin-left: 16px;
+			width: 22px;
+			height: 22px;
+		}
 	}
+
 }
 .rank-score {
 	padding-left: 40px;
@@ -153,17 +162,19 @@ body {
 }
 
 #tille-integral-list {
-	padding-left: 32px;
 	height: 96px;
 	border-top: 1px solid #ccc;
 	line-height: 96px;
 
 	> img {
 		float: left;
+		padding-left: 32px;
+		margin-right: 32px;
 	}
 	> span {
 		font-size: 26px;
 	}
+
 }
 #integral-list {
 	height: 96px;
@@ -175,10 +186,23 @@ body {
 			display: inline-block;
 			float: left;
 			margin-top: 18px;
+			margin-right: 32px;
 			width: 60px;
 			height: 60px;
 			line-height: 60px;
 			text-align: center;
 		}
+		> p {
+			font-size: 24px;  /*px*/
+		}
 	}
+}
+.first {
+	color: #ff7673;
+}
+.second {
+	color: #ff7a14;
+}
+.third {
+	color: #35a2e0;
 }
